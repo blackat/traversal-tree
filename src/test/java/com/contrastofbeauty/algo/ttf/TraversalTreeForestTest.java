@@ -148,9 +148,4 @@ public class TraversalTreeForestTest {
         assertThat(list.get(11), equalTo(13));
         assertThat(list.get(12), equalTo(3));
     }
-
-    @Test
-    public void testGetNode() throws Exception {
-
-    }
 }

@@ -93,33 +93,6 @@ public class TraversalTreeForest<Key extends Comparable<Key>, Value> {
         return root;
     }
 
-    public Node getNode(Node root, Key parent) {
-
-        Node found;
-
-        if (root == null) {
-            return null;
-        }
-
-        if (root.getKey() == parent) {
-            return root;
-        }
-
-        //left search
-        found = getNode(root.getLeftMostChild(), parent);
-        if (found != null && found.getKey() == parent) {
-            return found;
-        }
-
-        //right search
-        found = getNode(root.getRightSibling(), parent);
-        if (found != null && found.getKey() == parent) {
-            return found;
-        }
-
-        return root;
-    }
-
     public List<Key> getPath(Node root, List<Key> list) {
 
         if (root == null) {
