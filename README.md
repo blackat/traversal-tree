@@ -1,8 +1,7 @@
 ##Traversal Tree Forest
 Algorithm able to load a forest of trees and traverse them.
 
-* Traversal Tree Forest
-Able to build, in a recursive way, a non-binary forest of trees where each node has a link to the left most child and
+Able to build, in a recursive way, a _non-binary forest of trees_ where each node has a link to the left most child and
 a right link to the right most sibling.
 
 A new node could be
